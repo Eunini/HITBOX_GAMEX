@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "scenario_date": "2023-07-30",
+  "generated_at": "2026-10-27T23:56:18.368Z",
+  "synthetic": true,
+  "hitbox": {
+    "seed": 921289270,
+    "initial": {
+      "letters": [
+        "Z",
+        "M",
+        "W",
+        "P",
+        "E",
+        "N",
+        "U",
+        "G",
+        "B",
+        "O",
+        "I",
+        "D",
+        "C",
+        "H",
+        "A",
+        "T",
+        "S",
+        "J",
+        "V",
+        "L",
+        "Y",
+        "R",
+        "K",
+        "X",
+        "F",
+        "Q"
+      ],
+      "target": "N",
+      "seed": 1297360152,
+      "score": 0,
+      "hits": 0,
+      "misses": 0,
+      "streak": 0
+    },
+    "picks": [
+      "N",
+      "J",
+      "N",
+      "B",
+      "I",
+      "L"
+    ],
+    "expected": {
+      "letters": [
+        "N",
+        "M",
+        "Y",
+        "K",
+        "X",
+        "P",
+        "L",
+        "A",
+        "O",
+        "F",
+        "W",
+        "G",
+        "C",
+        "I",
+        "U",
+        "Z",
+        "S",
+        "E",
+        "J",
+        "B",
+        "T",
+        "R",
+        "Q",
+        "D",
+        "V",
+        "H"
+      ],
+      "target": "K",
+      "seed": 3553785444,
+      "score": 70,
+      "hits": 6,
+      "misses": 0,
+      "streak": 6
+    }
+  },
+  "tiles": {
+    "seed": 517018297,
+    "moves": [
+      "left",
+      "down",
+      "right",
+      "up",
+      "left",
+      "down",
+      "left",
+      "up"
+    ],
+    "expected": {
+      "board": [
+        2,
+        8,
+        4,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "seed": 2788596189,
+      "score": 24,
+      "moves": 8,
+      "over": false,
+      "won": false
+    }
+  },
+  "memory": {
+    "seed": 206381511,
+    "expected": {
+      "cards": [
+        7,
+        2,
+        1,
+        6,
+        3,
+        1,
+        4,
+        2,
+        5,
+        4,
+        5,
+        6,
+        7,
+        0,
+        3,
+        0
+      ],
+      "open": [],
+      "matched": [],
+      "moves": 0,
+      "locked": false,
+      "won": false
+    }
+  },
+  "reaction": {
+    "seed": 439030367,
+    "delays": [
+      3402,
+      2943,
+      2823,
+      1443,
+      2640
+    ]
+  }
+}
