@@ -3,276 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Encryption</title>
-    <style>
-            body {
-        height: 120vh;
-        background-color: #00ff00;
-        font-family: 'Ubuntu', sans-serif;
-     
-    }
-    * {
-        -webkit-user-select: none;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .body {
-        position: absolute;
-    }
-    .holder {
-        position: absolute;
-        border-radius: 20px;
-        width: 650x;
-        height: 600px;
-        border: 2px solid crimson;
-        margin: 80px 125px;
-        overflow: hidden;
-        background-color: beige;
-        display: flex;
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-gap: 10px;
-    }
-    .panel {
-        position: relative;
-        display: flex;
-        width: 630px;
-        height: 70px;
-        border-radius: 12px;
-        border: 2px solid #00ff00;
-        margin: 60px 7px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: white;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-    }
-    .element {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-    }
-    .box {
-        padding: 10px 20px;
-        border-radius: 5px;
-        background-color: crimson;
-        color: black;
-        font-weight: bolder;
-        border: 1px solid #041f04;
-    }
-    h1 #over {
-        margin: auto;
-        justify-content: last baseline;
-        transform: translateY(300px);
-    }
-    .container {  
-        width: 600px;
-        height: 450px;
-        flex-wrap: wrap;
-        display: flex;
-        padding: 10;
-        margin: 10px;
-    }
-    .bubble {
-        width: 50px;
-        height: 50px;
-        background-color: crimson;
-        border-radius: 5px;
-        border: 1px solid #041f04;
-        color: black;
-        display: flex;
-        font-weight: 800;
-        padding: 15px;
-        margin: 8px;
-        font-weight: 800;
-        font-size: 20px;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    h4 {
-        color: black;
-        font-size: 20px;
-        padding: 7px;
-    }
     
-    @media only screen and (max-width: 600px) {
-      h4 {
-        font-size: 13px;
-        padding: 3px;
-        margin: 0;
-      }
-        .holder {
-            width: 90%;
-            height: 80vh;
-            margin: 20px 18px ;
-            overflow-x: hidden;
-            flex-wrap: wrap;
-            grid-gap: 10px;
-            
-        }
-    
-        .panel {
-            width: 100%;
-            margin: 20px 5px;
-            padding: 5px;
-        }
-    
-        .box {
-            width: 40px;
-            height: 40px;
-            font-size: 16px;
-            padding: 6px;
-            display: flex ;
-            text-align: center;
-            justify-content: center;
-            margin: 0;
-        }
-        .bubble {
-          width: 50px;
-          height: 50px;
-          padding: 5px;
-          margin: 5px ;
-        }
-        .container {
-          padding: 5px;
-          margin: 10px;
-          width: 100%;
-          display: flex;
-          overflow: ovrhidden;
-        }
-        .element {
-          grid: 2px;
-        }
-    }
-    </style>
+    <title>HITBOX GAMEZ</title>
 </head>
 <body>
-    <div class="holder">
-        <div class="panel">
-            <div class="element">
-                <h4>Hit:</h4>
-                <div id="hitbox" class="box"> A </div>
+    <div class="daddyContainer">
+
+        <div class="about" id="about">
+            <h2>Hii, I'm Inioluwa. <br> I developed this simple hitbox game out of boredom 😏</h2>
+            <p>Please give me star on github 🥺 <a href="https://github.com/Eunini/randgame" target="_blank" rel="noopener noreferrer" style="color: gold; font-size: 20px; text-decoration: none; padding: 0 5px;">STAR</a></p>
+            
+            <div class="how">
+                <h2 >--How to play--</h2>
+                <ul>
+                    <ol><a href="https://github.com/Eunini" target="_blank" rel="noopener noreferrer"> 1. Follow me on github</a></li>
+                    <ol>2. Search for the letter given in the hitbox, click to earn score.</li>
+                    <ol>3. You have 30 seconds</li>
+                </ul>
+            
             </div>
-            <div class="element">
-                <h4>Timer:</h4>
-                <div id="timer" class="box"> 30 </div>
-            </div>
-            <div class="element">
-                <h4>Score:</h4>
-                <div id="scorebox" class="box"> 0 </div>
-            </div>
+            <button  onclick="startGame()"> START GAME</button>
         </div>
-        <div class="container" id="container">
-            <!-- Your JavaScript-generated content will go here -->
+
+<!-- the game here -->
+        <div class="holder" id="holder">
+            <div class="panel">
+                <div class="element">
+                    <h4>Hit:</h4>
+                    <div id="hitbox" class="box"> A </div>
+                </div>
+                <div class="element">
+                    <h4>Timer:</h4>
+                    <div id="timer" class="box"> 30 </div>
+                </div>
+                <div class="element">
+                    <h4>Score:</h4>
+                    <div id="scorebox" class="box"> 0 </div>
+                </div>
+            </div>
+
+            <div class="container" id="container"> </div>
+    
+            <div class="result" id="result">
+                    <h1>GAME OVER!</h1>
+                    <p>Your Final Score is 😀 <span id="finalScore"></span></p>
+                    <button onclick="closeModal()">Restart</button>
+            </div>
         </div>
     </div>
-
-    <script>
-    
-      let seconds = 30;
-      let score = 0;
-
-        function updateCountdown() {
-          document.getElementById('timer').textContent = seconds;
-      
-          if (seconds > 0) {
-            seconds--;
-            setTimeout(updateCountdown, 1000);
-          } else {
-            clearInterval();
-          }
-        }
-        updateCountdown();
-        
-        function getRandLetter() {
-            let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            let uniqueLetters = [];
-
-            while (uniqueLetters.length < 26) {
-                let randIndex = Math.floor(Math.random() * alphabet.length);
-                let randomLetter = alphabet[randIndex];
-
-                if (!uniqueLetters.includes(randomLetter)) {
-                    uniqueLetters.push(randomLetter);
-                }
-            }
-
-            return uniqueLetters.slice(); // Return a copy of the array
-        }
-
-        // Function to shuffle an array
-        function shuffleArr(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                let j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
-function changeLetter() {
-            // Get a random letter (A-Z)
-            let randomLetter = String.fromCharCode(65 + Math.floor(Math.random() * 26));
-    
-    // Update the content of the letterBox
-    let letterVal = document.getElementById('hitbox');
-    letterVal.textContent = randomLetter;
-  }
-        let container = document.getElementById("container");
-
-        // Generate unique letters and shuffle them
-        let uniqueLetters = getRandLetter();
-        
-        // Create 26 boxes with random letters 
-        function createBox(letter) {
-            let box = document.createElement("div");
-            box.className = "bubble";
-            container.appendChild(box);
-            box.innerHTML = letter;
-        }
-        
-        function conditionClick() {
-            // Add click event listener to each box
-            box.addEventListener('click', function () {
-       // Get a new set of uniqueLetterswhen clicked
-            shuffleArr(uniqueLetters);
-            updateBoxes();
-            changeLetter()
-            });
-        }
-        
-        // Function to update box content based on the current uniqueLetters
-       
-        function updateBoxes() {
-            let boxes = document.querySelectorAll('.bubble');
-            boxes.forEach((box, index) => {
-               box.innerHTML = uniqueLetters[index];
-            });
-        }
-
-    container.addEventListener('click', function (event) {
-        let clickedBox = event.target;
-          // Check if the clicked box's letter matches the letter in the hitbox
-         
-          if(clickedBox.textContent === document.getElementById('hitbox').textContent) {
-            // Increment the score and update the score box
-            
-            score += 10;
-            document.getElementById('scorebox').textContent = score;
-    
-            // Reshuffle letters only when there's a match
-            let uniqueLetters = getRandLetter();
-            shuffleArr(uniqueLetters);
-            updateBoxes();
-            changeLetter();
-            conditionClick();
-          }
-      });
-        // Create 26 boxes initially
-        for (let i = 0; i < 26; i++) {
-            createBox(uniqueLetters[i]);
-        }
-    </script>
+<footer>All rights reserved by &copy; Inioluwa</footer>
+<script src="script.js"></script>
 </body>
 </html>
