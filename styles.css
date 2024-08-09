@@ -244,6 +244,8 @@ footer{
         display: flex;
         padding: 5px;
         margin: 5px;
+        justify-content: center;
+        align-items: center;
     }
     .box {
         width: 40px;
