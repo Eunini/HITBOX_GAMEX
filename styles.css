@@ -16,7 +16,7 @@ body {
 }
 .about{
     width: 50vw;
-    height: 70vh;
+    height: 85vh;
     background-color: #1d1d1d;
     border-radius: 20px;
     border: 0;
@@ -33,11 +33,12 @@ body {
     justify-content: center;
     margin: 30px auto;
     font-weight: 400;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 26px;
 }
 .about p{
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
 }
 .about button{
     border: 0;
