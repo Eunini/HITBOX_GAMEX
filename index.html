@@ -1,62 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#151815" />
+    <meta
+      name="description"
+      content="HITBOX GAMEX by Inioluwa. Four browser games, daily challenges and local personal bests. Keyboard, mouse and touch."
+    />
+    <link rel="icon" href="data:," />
     <title>HITBOX GAMEX</title>
-</head>
-<body>
-    <div class="daddyContainer">
-
-        <div class="about" id="about">
-            <h2>Hii, I'm Inioluwa. <br> I developed this simple hitbox game out of boredom 😏</h2>
-            <p>Please give me star on github 🥺 <a href="https://github.com/Eunini/randgame" target="_blank" rel="noopener noreferrer" style="color: gold; font-size: 20px; text-decoration: none; padding: 0 5px;">STAR</a></p>
-            
-            <div class="how">
-                <h2 >--How to play--</h2>
-                <ul>
-                    <ol><a href="https://github.com/Eunini" target="_blank" rel="noopener noreferrer"> 1. Follow me on github</a></li>
-                    <ol>2. Search for the letter given in the hitbox, click to earn score.</li>
-                    <ol>3. You have 30 seconds</li>
-                </ul>
-            
-            </div>
-            <button  onclick="startGame()"> START GAME</button>
-        </div>
-
-<!-- the game here -->
-        <div class="holder" id="holder">
-            <div class="panel">
-                <div class="element">
-                    <h4>Hit:</h4>
-                    <div id="hitbox" class="box"> A </div>
-                </div>
-                <div class="element">
-                    <h4>Timer:</h4>
-                    <div id="timer" class="box"> 30 </div>
-                </div>
-                <div class="element">
-                    <h4>Score:</h4>
-                    <div id="scorebox" class="box"> 0 </div>
-                </div>
-            </div>
-
-            <div class="container" id="container"> </div>
-    
-            <div class="result" id="result">
-                    <h1>GAME OVER! 😀</h1>
-                    <p>Your Final Score is <span id="finalScore"></span></p>
-                    <button onclick="closeModal()">Restart</button>
-            </div>
-        </div>
-    </div>
-<footer>All rights reserved by &copy; Inioluwa</footer>
-<script src="script.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

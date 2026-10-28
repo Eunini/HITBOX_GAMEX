@@ -1,0 +1,24 @@
+{
+  "name": "hitbox-gamex",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4331",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4332",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "@phosphor-icons/react": "2.1.10",
+    "@fontsource-variable/space-grotesk": "5.3.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.5",
+    "@playwright/test": "1.58.0",
+    "@axe-core/playwright": "4.11.0"
+  }
+}

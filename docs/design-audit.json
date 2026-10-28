@@ -1,0 +1,19 @@
+{
+  "mode": "redesign-preserve",
+  "source_revision": "a057350eeb4df61e40a13212877c4653d6553f3d",
+  "before_screenshots": "../evidence/hitbox-before-{desktop,game,mobile}.png",
+  "existing": {
+    "brand": "HITBOX GAMEX; dark #1d1d1d panels, green rgb(38,158,38) controls, Ubuntu / Press Start 2P / Ubuntu Mono fonts, 20px panel corners",
+    "architecture": "One index.html, #about introduction, 30-second letter game, results overlay, Inioluwa copyright footer",
+    "preserve": ["HITBOX GAMEX name", "Original letter-match game", "Inioluwa's casual author introduction", "#about anchor", "Original copyright text", "Original Git commits and unmodified legacy app"],
+    "retire": ["Non-keyboard div controls", "Drifting chained timers", "Overlapping restart timers", "Remote Google Fonts", "Malformed instruction lists", "Broken randgame star link", "Viewport-sized mobile overflow"],
+    "seo": "Title HITBOX GAMEX; root URL; no description, structured data, analytics or extra routes found",
+    "dials": {"DESIGN_VARIANCE": 4, "MOTION_INTENSITY": 1, "VISUAL_DENSITY": 6}
+  },
+  "direction": {
+    "aesthetic": "Native CSS arcade interface; charcoal, lime green and self-hosted Space Grotesk; Phosphor icons",
+    "dials": {"DESIGN_VARIANCE": 6, "MOTION_INTENSITY": 3, "VISUAL_DENSITY": 5},
+    "reason": "Casual players need fast access to games and visible controls. Motion only marks state changes. Dark and light themes share one accent and shape system.",
+    "artwork": "Actual screenshots captured from the running game boards, not invented player metrics or decorative interface mockups"
+  }
+}
